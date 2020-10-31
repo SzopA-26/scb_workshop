@@ -8,7 +8,17 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
-    return 0
+    const vowels = ['a','e','i','o','u','A','E','I','O','U']
+    let count = 0;
+    for (letter of str) {
+        if (vowels.includes(letter)) {
+            count++
+    
+        }
+    
+    }
+    return count
+
 }
 
 module.exports = vowels;
