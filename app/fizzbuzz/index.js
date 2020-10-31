@@ -27,9 +27,12 @@ function fizzBuzz(n) {
             result = i
         }
 
-        resp.push(result)
+        resp.push({
+            num: i,
+            val: result
+        })
 
-        console.log(resp[i - 1])
+        console.log(result)
     }
     //resp = [{num: x, val: y}]
     return resp
