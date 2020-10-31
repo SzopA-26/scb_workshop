@@ -7,6 +7,19 @@
 
 function maxChar(str) {
     let maxChar = '';
+    let maxLength = 0;
+    for (i of str) {
+        let length = 0;
+        for (j of str) {
+            if (j === i) {
+                length++;
+            }
+        }
+        if (length > maxLength) {
+            maxLength = length;
+            maxChar = i
+        }
+    }
     return maxChar;
 }
 
